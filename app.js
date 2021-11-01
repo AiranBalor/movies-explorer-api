@@ -15,7 +15,7 @@ const {
 dotenv.config();
 const {
   NODE_ENV,
-  PORT = 3000,
+  PORT = 3001,
   DB_URL,
 } = process.env;
 
@@ -30,7 +30,7 @@ mongoose.connect(NODE_ENV === 'production' ? DB_URL : 'mongodb://localhost:27017
 });
 
 app.use(cors({
-  origin: true,
+  origin: NODE_ENV === 'production' ? 'https://korotkov.movies.nomoredomains.work' : 'http://localhost:3000',
   credentials: true,
 }));
 

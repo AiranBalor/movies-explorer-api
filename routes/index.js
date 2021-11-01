@@ -6,13 +6,13 @@ const { login, createUser } = require('../controllers/users');
 const { validateSignUp, validateSignIn } = require('../middlewares/validation');
 const NotFoundError = require('../errors/NotFoundError');
 
-router.post('/api/signin', validateSignIn, login);
-router.post('/api/signup', validateSignUp, createUser);
+router.post('/signin', validateSignIn, login);
+router.post('/signup', validateSignUp, createUser);
 
 router.use(auth);
 
-router.use('/api/users', usersRouter);
-router.use('/api/movies', moviesRouter);
+router.use('/users', usersRouter);
+router.use('/movies', moviesRouter);
 
 router.all('*', () => {
   throw new NotFoundError('Указанной страницы не существует');
