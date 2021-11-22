@@ -5,7 +5,7 @@
 ![Node](https://img.shields.io/badge/-Node.js-469837?logo=Node.js&logoColor=white)
 ![Express](https://img.shields.io/badge/-Express-000000?logo=express&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/-MongoDB-56a14b?logo=mongodb&logoColor=white)
-
+![MongoDB](https://img.shields.io/badge/-MongoDB-56a14b?logo=mongodb&logoColor=white)
 ___
 
 ## Описание
